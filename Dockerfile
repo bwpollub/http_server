@@ -24,16 +24,24 @@ COPY --from=builder /usr/local/lib/python3.10/site-packages/ /usr/local/lib/pyth
 COPY --from=builder /usr/local/bin/ /usr/local/bin/
 COPY --from=builder /app /app
 
+# ustawienie zmiennych autor i port
 ARG AUTHOR="Bartłomiej Wójtowicz"
 ENV PORT=8080
 
+# dodanie uzytkownika serveruser
 RUN adduser --disabled-password --gecos "" serveruser
 
+# ustawienie katalogu w ktorym pracujemy na app
 WORKDIR /app
 
+# ustawienie dodanego uzytkownika jako wlasciciela /app
 RUN chown -R serveruser:serveruser /app
 
+# uzycie uzytkownika serveruser 
 USER serveruser
+
+# uruchomienie serwera
 CMD ["python", "http_server.py"]
 
+# dodanie informacji o autorze obrazu
 LABEL maintainer=$AUTHOR
