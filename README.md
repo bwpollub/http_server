@@ -17,7 +17,7 @@ Za pomocą polecenia docker run uruchamiamy kontener na podstawie utworzonego wc
 c) docker logs server_container</br>
 To polecenie pozwala na przejrzenie logów, które wytworzyła aplikacja uruchomiona w kontenerze.</br></br>
 d) docker history serverimage</br>
-
+Za pomocą tego polecenia możemy sprawdzić ile warstw posiada zbudowany obraz.</br></br>
 
 Zrzut ekranu prezentujący poprawne działanie:
 ![alt text](https://github.com/bwpollub/http_server/blob/master/1.png)
