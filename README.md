@@ -7,6 +7,8 @@
 
 # zadanie 1
 
+<b>CZĘŚĆ OBOWIĄZKOWA:</b>
+
 Podpunkt 3:</br>
 a) docker build -t serverimage .</br>
 b) docker run --name server_container -d -p 8080:8080 serverimage</br>
