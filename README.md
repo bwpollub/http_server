@@ -20,4 +20,4 @@ d) docker history serverimage</br>
 Za pomocą tego polecenia możemy sprawdzić ile warstw posiada zbudowany obraz.</br></br>
 
 Zrzut ekranu prezentujący poprawne działanie:
-![alt text](https://github.com/bwpollub/http_server/blob/master/1.png)
+![alt text](https://github.com/bwpollub/http_server/blob/master/1.PNG)
