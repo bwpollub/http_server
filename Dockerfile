@@ -1,4 +1,4 @@
-# pierwszy etap - kopiowanie kodu do kontenera i instalacja requirements
+# pierwszy etap - pobranie obrazu bazowego i instalacja zależności systemowych
 FROM python:3.10-slim-buster AS base
 
 # ustawienie informacji o autorze
