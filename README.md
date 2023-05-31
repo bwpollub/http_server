@@ -35,8 +35,12 @@ Zrzut ekranu prezentujący poprawne działanie:</br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_armv7.PNG)</br></br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_docker_images.PNG)</br></br>
 
-1) Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm/v7, linux/arm64/v8 oraz linux/amd64 wykorzystując sterownik dockercontainer.</br>
+2) Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm/v7, linux/arm64/v8 oraz linux/amd64 wykorzystując sterownik dockercontainer.</br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_2_amd64.PNG)</br></br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_2_arm64.PNG)</br></br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_2_armv7.PNG)</br></br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_2_docker_images.PNG)</br></br>
+
+3) Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm/v7, linux/arm64/v8 oraz linux/amd64 wykorzystując sterownik dockercontainer. Dockerfile powinien wykorzystywać rozszerzony frontend i umożliwiać wykorzystanie danych cache w procesie budowania obrazu (deklaracje wewnątrz Dockerfile).
+
+<b>Zrobione w pliku Dockerfile, który wykorzystuje rozszerzony frontend</b>
