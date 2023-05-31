@@ -43,4 +43,13 @@ Zrzut ekranu prezentujący poprawne działanie:</br>
 
 3) Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm/v7, linux/arm64/v8 oraz linux/amd64 wykorzystując sterownik dockercontainer. Dockerfile powinien wykorzystywać rozszerzony frontend i umożliwiać wykorzystanie danych cache w procesie budowania obrazu (deklaracje wewnątrz Dockerfile).
 
-<b>Zrobione w pliku Dockerfile, który wykorzystuje rozszerzony frontend</b>
+<b>Zrobione w pliku Dockerfile, który wykorzystuje rozszerzony frontend</b></br></br>
+
+4) Zbudować obrazy kontenera z aplikacją opracowaną w punkcie nr 1, które będą pracował na architekturach: linux/arm/v7, linux/arm64/v8 oraz linux/amd64 wykorzystując sterownik dockercontainer. Dockerfile powinien wykorzystywać rozszerzony frontend, zawierać deklaracje wykorzystania cache (jak w p.3) i umożliwiać bezpośrednie wykorzystanie kodów aplikacji umieszczonych w swoim repozytorium publicznym na GitHub. 
+
+Dodany został plik Dockerfile2, który pobiera kod źródłowy z repozytorium github.
+
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_amd64.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_arm64.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_armv7.PNG)</br></br>
+
