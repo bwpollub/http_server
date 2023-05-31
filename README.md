@@ -29,4 +29,7 @@ Zrzut ekranu prezentujący poprawne działanie:</br>
 
 <b>CZĘŚĆ DODATKOWA:</b></br></br>
 
-1) 
+1) ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_amd64.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_arm64v8.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_armv7.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_1_docker_images.PNG)</br></br>
