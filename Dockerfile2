@@ -1,0 +1,43 @@
+# pierwszy etap - pobranie obrazu bazowego i instalacja zależności systemowych
+FROM python:3.10-slim-buster AS base
+
+# ustawienie informacji o autorze
+ARG AUTHOR="Bartłomiej Wójtowicz"
+
+# instalacja zależności systemowych, które będą potrzebne do uruchomienia kodu źródłowego
+RUN apt-get update && apt-get install -y git
+
+# drugi etap - stworzenie warstwy z zainstalowanymi zależnościami z Python oraz pobranym repozytorium
+FROM base AS dependencies
+
+# Ustawienie katalogu w ktorym pracujemy na app
+WORKDIR /app
+
+RUN git clone https://github.com/bwpollub/http_server.git ./
+
+# instalacja zależności Python
+RUN pip install --no-cache-dir -r requirements.txt
+
+# trzeci etap - stworzenie warstwy z włączoną aplikacją
+FROM dependencies AS application
+
+# ustawienie portu, na którym będzie działać aplikacja
+ENV PORT=8080
+
+# dodanie uzytkownika serveruser
+RUN adduser --disabled-password --gecos "" serveruser
+
+# ustawienie katalogu w ktorym pracujemy na app
+WORKDIR /app
+
+# ustawienie dodanego uzytkownika jako wlasciciela /app
+RUN chown -R serveruser:serveruser /app
+
+# uzycie uzytkownika serveruser 
+USER serveruser
+
+# dodanie informacji o autorze obrazu
+LABEL maintainer=$AUTHOR
+
+# uruchomienie serwera
+CMD ["python", "app/http_server.py"]
