@@ -50,6 +50,6 @@ Zrzut ekranu prezentujący poprawne działanie:</br>
 Dodany został plik Dockerfile2, który pobiera kod źródłowy z repozytorium github.
 
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_amd64.PNG)</br></br>
-![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_arm64.PNG)</br></br>
+![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_arm64v8.PNG)</br></br>
 ![alt text](https://github.com/bwpollub/http_server/blob/master/dod_4_armv7.PNG)</br></br>
 
