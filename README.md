@@ -24,4 +24,9 @@ Za pomocą tego polecenia możemy sprawdzić ile warstw posiada zbudowany obraz.
 ![alt text](https://github.com/bwpollub/http_server/blob/master/5.PNG)</br></br>
 
 Zrzut ekranu prezentujący poprawne działanie:</br>
-![alt text](https://github.com/bwpollub/http_server/blob/master/1.PNG)
+![alt text](https://github.com/bwpollub/http_server/blob/master/1.PNG)</br></br>
+
+
+<b>CZĘŚĆ DODATKOWA:</b></br></br>
+
+1) 
